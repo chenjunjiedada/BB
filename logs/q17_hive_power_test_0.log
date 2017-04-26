@@ -1,0 +1,168 @@
+Additional local hive settings found. Adding /opt/Beaver/BB/engines/hive/queries/q17/engineLocalSettings.sql to hive init.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/Beaver/hive-2.2.0-bloom-filter/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/Beaver/hadoop-2.7.3/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in file:/opt/Beaver/hive-2.2.0-bloom-filter/config/2017-04-26-10-19-31/hive-log4j2.properties Async: true
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats=true
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=false
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=false
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=false
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+hive.exec.compress.output=false
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.414 seconds
+No Stats for bigbench@store_sales, Columns: ss_customer_sk, ss_promo_sk, ss_ext_sales_price, ss_sold_date_sk, ss_item_sk, ss_store_sk
+No Stats for bigbench@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for bigbench@item, Columns: i_category, i_item_sk
+No Stats for bigbench@store, Columns: s_gmt_offset, s_store_sk
+No Stats for bigbench@promotion, Columns: p_channel_email, p_promo_sk, p_channel_dmail, p_channel_tv
+No Stats for bigbench@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for bigbench@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for bigbench@store_sales, Columns: ss_customer_sk, ss_promo_sk, ss_ext_sales_price, ss_sold_date_sk, ss_item_sk, ss_store_sk
+No Stats for bigbench@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for bigbench@item, Columns: i_category, i_item_sk
+No Stats for bigbench@store, Columns: s_gmt_offset, s_store_sk
+No Stats for bigbench@promotion, Columns: p_promo_sk
+No Stats for bigbench@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for bigbench@customer_address, Columns: ca_address_sk, ca_gmt_offset
+Warning: Map Join MAPJOIN[111][bigTable=?] in task 'Stage-1:MAPRED' is a cross product
+Query ID = root_20170426110215_97bc0376-924a-4c53-b00d-1a57160d42e2
+Total jobs = 4
+Launching Job 1 out of 4
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = b17636f7-22fd-4e9b-b7db-cd2fcc86ca46
+Running with YARN Application = application_1493173284393_0019
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0019
+
+Query Hive on Spark job[0] stages: [0]
+
+Status: Running (Hive on Spark job[0])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 11:02:43,925	Stage-0_0: 0(+7)/7	
+2017-04-26 11:02:46,937	Stage-0_0: 1(+6)/7	
+2017-04-26 11:02:47,946	Stage-0_0: 7/7 Finished	
+Status: Finished successfully in 8.06 seconds
+Launching Job 2 out of 4
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 89daf4f1-fbbf-4337-9c3a-b65ebd55530f
+Running with YARN Application = application_1493173284393_0019
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0019
+
+Query Hive on Spark job[1] stages: [1, 2]
+
+Status: Running (Hive on Spark job[1])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 11:02:50,139	Stage-1_0: 0(+2)/2	Stage-2_0: 0/1	
+2017-04-26 11:02:51,143	Stage-1_0: 1(+1)/2	Stage-2_0: 0/1	
+2017-04-26 11:02:54,163	Stage-1_0: 2/2 Finished	Stage-2_0: 0(+1)/1	
+2017-04-26 11:02:57,189	Stage-1_0: 2/2 Finished	Stage-2_0: 1/1 Finished	
+Status: Finished successfully in 8.06 seconds
+Launching Job 3 out of 4
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 07d3c157-8a63-422b-8ca4-3e7095e0279e
+Running with YARN Application = application_1493173284393_0019
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0019
+
+Query Hive on Spark job[2] stages: [3]
+
+Status: Running (Hive on Spark job[2])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 11:02:59,274	Stage-3_0: 0(+7)/7	
+2017-04-26 11:03:00,277	Stage-3_0: 5(+2)/7	
+2017-04-26 11:03:02,287	Stage-3_0: 7/7 Finished	
+Status: Finished successfully in 5.02 seconds
+Launching Job 4 out of 4
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 339bf847-985f-4de9-940c-3361294ab5ff
+Running with YARN Application = application_1493173284393_0019
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0019
+
+Query Hive on Spark job[3] stages: [5, 6, 4]
+
+Status: Running (Hive on Spark job[3])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 11:03:03,371	Stage-4_0: 0(+2)/2	Stage-5_0: 0/1	Stage-6_0: 0/1	
+2017-04-26 11:03:05,381	Stage-4_0: 1(+1)/2	Stage-5_0: 0/1	Stage-6_0: 0/1	
+2017-04-26 11:03:07,393	Stage-4_0: 2/2 Finished	Stage-5_0: 1/1 Finished	Stage-6_0: 1/1 Finished	
+Status: Finished successfully in 5.03 seconds
+Loading data to table bigbench.q17_hive_power_test_0_result
+OK
+Time taken: 52.01 seconds
+======= q17_hive_power_test_0 time =======
+Start timestamp: 2017/04/26:11:02:08 1493175728
+Stop  timestamp: 2017/04/26:11:03:08 1493175788
+Duration:  0h 1m 0s
+q17_hive_power_test_0 SUCCESS exit code: 0 
+----- result -----
+HAS_RESULT  bytes: 28
+to display: hadoop fs -cat /user/root/benchmarks/bigbench/queryResults/q17_hive_power_test_0_result/*
+----- logs -----
+time&status: /opt/Beaver/BB/logs/times.csv
+full log: /opt/Beaver/BB/logs/q17_hive_power_test_0.log
+=========================

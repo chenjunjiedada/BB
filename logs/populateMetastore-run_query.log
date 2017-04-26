@@ -1,0 +1,786 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/Beaver/hive-2.2.0-bloom-filter/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/Beaver/hadoop-2.7.3/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in file:/opt/Beaver/hive-2.2.0-bloom-filter/config/2017-04-26-10-19-31/hive-log4j2.properties Async: true
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats=true
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=false
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=false
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=false
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+OK
+Time taken: 0.045 seconds
+OK
+Time taken: 0.567 seconds
+OK
+Time taken: 0.411 seconds
+OK
+Time taken: 0.117 seconds
+OK
+Time taken: 0.162 seconds
+OK
+Time taken: 0.107 seconds
+Query ID = root_20170426104032_a0b3264f-7f6d-4eca-abe6-54557533b05d
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 7dd8a1b1-5855-48c2-80c8-97ee22599947
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[0] stages: [0]
+
+Status: Running (Hive on Spark job[0])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:40:56,829	Stage-0_0: 0(+2)/2	
+2017-04-26 10:40:59,844	Stage-0_0: 1(+1)/2	
+2017-04-26 10:41:00,849	Stage-0_0: 2/2 Finished	
+Status: Finished successfully in 6.06 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/customer
+OK
+Time taken: 29.542 seconds
+OK
+Time taken: 0.313 seconds
+OK
+Time taken: 0.006 seconds
+OK
+Time taken: 0.159 seconds
+OK
+Time taken: 0.107 seconds
+Query ID = root_20170426104102_8385479c-bd57-4bb9-aa37-9da691035c8a
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 1bf42346-7eed-4657-a190-d79d9d8cf2ec
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[1] stages: [1]
+
+Status: Running (Hive on Spark job[1])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:03,498	Stage-1_0: 0(+2)/2	
+2017-04-26 10:41:06,518	Stage-1_0: 1(+1)/2	
+2017-04-26 10:41:07,524	Stage-1_0: 2/2 Finished	
+Status: Finished successfully in 5.04 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/customer_address
+OK
+Time taken: 5.737 seconds
+OK
+Time taken: 0.205 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.197 seconds
+OK
+Time taken: 0.112 seconds
+Query ID = root_20170426104108_e98deb2e-ab83-4928-8d51-8f8ffbef725e
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 7ed166b5-ea56-4bc2-a78f-5abe3ec0d724
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[2] stages: [2]
+
+Status: Running (Hive on Spark job[2])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:09,759	Stage-2_0: 0(+1)/1	
+2017-04-26 10:41:12,777	Stage-2_0: 0(+1)/1	
+2017-04-26 10:41:15,795	Stage-2_0: 1/1 Finished	
+Status: Finished successfully in 7.05 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/customer_demographics
+OK
+Time taken: 7.671 seconds
+OK
+Time taken: 0.171 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.083 seconds
+OK
+Time taken: 0.104 seconds
+Query ID = root_20170426104116_206b38fb-942b-44fd-a58f-d5041840e18a
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 3e2de615-2cba-42dc-b215-4f1258072a69
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[3] stages: [3]
+
+Status: Running (Hive on Spark job[3])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:17,859	Stage-3_0: 0(+1)/1	
+2017-04-26 10:41:20,876	Stage-3_0: 1/1 Finished	
+Status: Finished successfully in 4.03 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/date_dim
+OK
+Time taken: 4.684 seconds
+OK
+Time taken: 0.328 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.088 seconds
+OK
+Time taken: 0.11 seconds
+Query ID = root_20170426104121_7b7c5cb4-bc90-457b-a82b-89aed995fb52
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = d8cb9a70-3c01-4ce1-9fa0-0ed6f26ba028
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[4] stages: [4]
+
+Status: Running (Hive on Spark job[4])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:23,232	Stage-4_0: 0(+1)/1	
+2017-04-26 10:41:26,246	Stage-4_0: 1/1 Finished	
+Status: Finished successfully in 4.02 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/household_demographics
+OK
+Time taken: 4.911 seconds
+OK
+Time taken: 0.121 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.055 seconds
+OK
+Time taken: 0.108 seconds
+Query ID = root_20170426104127_5abe2f87-a8d5-4a85-9c6d-23bf1211e269
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 968750a9-a1cb-400f-9872-f522f37ace32
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[5] stages: [5]
+
+Status: Running (Hive on Spark job[5])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:28,384	Stage-5_0: 0(+1)/1	
+2017-04-26 10:41:31,400	Stage-5_0: 1/1 Finished	
+Status: Finished successfully in 4.03 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/income_band
+OK
+Time taken: 4.688 seconds
+OK
+Time taken: 0.119 seconds
+OK
+Time taken: 0.006 seconds
+OK
+Time taken: 0.168 seconds
+OK
+Time taken: 0.11 seconds
+Query ID = root_20170426104132_afcc9192-180f-4c1e-8492-38e88365d755
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 1f675f9a-3140-496a-a208-b9f2e7875c49
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[6] stages: [6]
+
+Status: Running (Hive on Spark job[6])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:33,534	Stage-6_0: 1(+1)/2	
+2017-04-26 10:41:36,553	Stage-6_0: 1(+1)/2	
+2017-04-26 10:41:37,557	Stage-6_0: 2/2 Finished	
+Status: Finished successfully in 5.04 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/item
+OK
+Time taken: 5.77 seconds
+OK
+Time taken: 0.083 seconds
+OK
+Time taken: 0.005 seconds
+OK
+Time taken: 0.161 seconds
+OK
+Time taken: 0.118 seconds
+Query ID = root_20170426104138_06e8f929-b234-4f8a-8d00-9f1fc6099c12
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 07d2fc18-4bc4-43dd-ac85-3f110de7e9a2
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[7] stages: [7]
+
+Status: Running (Hive on Spark job[7])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:39,732	Stage-7_0: 0(+2)/2	
+2017-04-26 10:41:42,746	Stage-7_0: 2/2 Finished	
+Status: Finished successfully in 4.02 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/promotion
+OK
+Time taken: 4.762 seconds
+OK
+Time taken: 0.084 seconds
+OK
+Time taken: 0.005 seconds
+OK
+Time taken: 0.095 seconds
+OK
+Time taken: 0.109 seconds
+Query ID = root_20170426104143_6243ddae-0677-46aa-bf20-1acf1b33000f
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = ea306b4d-e4b8-492d-a533-88b1d7224039
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[8] stages: [8]
+
+Status: Running (Hive on Spark job[8])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:44,845	Stage-8_0: 0(+1)/1	
+2017-04-26 10:41:47,864	Stage-8_0: 1/1 Finished	
+Status: Finished successfully in 4.03 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/reason
+OK
+Time taken: 4.703 seconds
+OK
+Time taken: 0.118 seconds
+OK
+Time taken: 0.006 seconds
+OK
+Time taken: 0.035 seconds
+OK
+Time taken: 0.105 seconds
+Query ID = root_20170426104148_4387b7a9-21ce-4f1d-9c5a-8533acd80870
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 5c513d70-238a-470b-80fc-0754aaf4a67c
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[9] stages: [9]
+
+Status: Running (Hive on Spark job[9])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:49,825	Stage-9_0: 0(+1)/1	
+2017-04-26 10:41:52,836	Stage-9_0: 1/1 Finished	
+Status: Finished successfully in 4.02 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/ship_mode
+OK
+Time taken: 4.78 seconds
+OK
+Time taken: 0.134 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.109 seconds
+Query ID = root_20170426104153_7b2349a8-8fe0-44d4-8e69-9b408d062d6c
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 3f8f5ef7-0d22-4ff6-aff8-0a7f492601ec
+2017-04-26 10:41:54,982	Stage-10_0: 1/1 Finished	
+Status: Finished successfully in 1.00 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/store
+OK
+Time taken: 1.639 seconds
+OK
+Time taken: 0.165 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.084 seconds
+OK
+Time taken: 0.105 seconds
+Query ID = root_20170426104155_ca9223f7-c298-49c2-9423-bff6d549417d
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 84d99b80-23a3-4750-90b6-0ea39cef6926
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[11] stages: [11]
+
+Status: Running (Hive on Spark job[11])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:41:57,018	Stage-11_0: 0(+1)/1	
+2017-04-26 10:41:58,021	Stage-11_0: 1/1 Finished	
+Status: Finished successfully in 2.02 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/time_dim
+OK
+Time taken: 2.694 seconds
+OK
+Time taken: 0.1 seconds
+OK
+Time taken: 0.005 seconds
+OK
+Time taken: 0.144 seconds
+OK
+Time taken: 0.117 seconds
+Query ID = root_20170426104158_c732329c-cb17-4503-a799-46b5769f45f6
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 923b7a4d-92a2-415f-a461-88cd14a69351
+2017-04-26 10:42:00,158	Stage-12_0: 1/1 Finished	
+Status: Finished successfully in 1.00 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/warehouse
+OK
+Time taken: 1.774 seconds
+OK
+Time taken: 0.129 seconds
+OK
+Time taken: 0.013 seconds
+OK
+Time taken: 0.078 seconds
+OK
+Time taken: 0.11 seconds
+Query ID = root_20170426104201_aa99c5a9-fc11-4ce3-81b4-b77779fa724c
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 2d4c82ea-01bd-4947-a412-d65bba93c8f0
+2017-04-26 10:42:02,328	Stage-13_0: 1/1 Finished	
+Status: Finished successfully in 1.00 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/web_site
+OK
+Time taken: 1.829 seconds
+OK
+Time taken: 0.15 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.056 seconds
+OK
+Time taken: 0.108 seconds
+Query ID = root_20170426104203_166ac486-6d51-44b6-a7ca-115c372fae89
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 3272b885-3eb0-4a18-aeb0-7602d7212abc
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[14] stages: [14]
+
+Status: Running (Hive on Spark job[14])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:04,527	Stage-14_0: 1(+1)/2	
+2017-04-26 10:42:07,538	Stage-14_0: 2/2 Finished	
+Status: Finished successfully in 4.02 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/web_page
+OK
+Time taken: 4.799 seconds
+OK
+Time taken: 0.142 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.056 seconds
+OK
+Time taken: 0.107 seconds
+Query ID = root_20170426104208_48558d09-069b-4e0a-affb-bb6ce463e8d2
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = acefc075-8934-49db-b739-1a8a6c011a83
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[15] stages: [15]
+
+Status: Running (Hive on Spark job[15])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:09,685	Stage-15_0: 0(+3)/3	
+2017-04-26 10:42:12,695	Stage-15_0: 1(+2)/3	
+2017-04-26 10:42:15,713	Stage-15_0: 1(+2)/3	
+2017-04-26 10:42:18,724	Stage-15_0: 1(+2)/3	
+2017-04-26 10:42:20,733	Stage-15_0: 2(+1)/3	
+2017-04-26 10:42:23,747	Stage-15_0: 3/3 Finished	
+Status: Finished successfully in 15.07 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/inventory
+OK
+Time taken: 15.757 seconds
+OK
+Time taken: 0.191 seconds
+OK
+Time taken: 0.012 seconds
+OK
+Time taken: 0.078 seconds
+OK
+Time taken: 0.109 seconds
+Query ID = root_20170426104224_04921182-27b2-4739-88c5-8c191d2a3e5c
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 98a33780-0fb4-473c-a093-6eda40ec177f
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[16] stages: [16]
+
+Status: Running (Hive on Spark job[16])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:26,209	Stage-16_0: 0(+2)/2	
+2017-04-26 10:42:29,221	Stage-16_0: 0(+2)/2	
+2017-04-26 10:42:30,223	Stage-16_0: 1(+1)/2	
+2017-04-26 10:42:31,227	Stage-16_0: 2/2 Finished	
+Status: Finished successfully in 6.02 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/store_sales
+OK
+Time taken: 7.074 seconds
+OK
+Time taken: 0.14 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.191 seconds
+OK
+Time taken: 0.108 seconds
+Query ID = root_20170426104232_6ca1a741-d867-4368-a863-79f5cc5524e7
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 11a6e4a3-e1d7-480f-9fab-4778a44f484a
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[17] stages: [17]
+
+Status: Running (Hive on Spark job[17])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:33,440	Stage-17_0: 1(+1)/2	
+2017-04-26 10:42:34,443	Stage-17_0: 2/2 Finished	
+Status: Finished successfully in 2.01 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/store_returns
+OK
+Time taken: 2.675 seconds
+OK
+Time taken: 0.107 seconds
+OK
+Time taken: 0.006 seconds
+OK
+Time taken: 0.126 seconds
+OK
+Time taken: 0.108 seconds
+Query ID = root_20170426104235_99d28114-5008-4caa-949c-4e5d7b57bfc2
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 41ae7ebb-e11b-49b6-ab0b-7f8a0e113726
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[18] stages: [18]
+
+Status: Running (Hive on Spark job[18])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:36,494	Stage-18_0: 0(+2)/2	
+2017-04-26 10:42:39,505	Stage-18_0: 0(+2)/2	
+2017-04-26 10:42:42,515	Stage-18_0: 2/2 Finished	
+Status: Finished successfully in 7.03 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/web_sales
+OK
+Time taken: 7.805 seconds
+OK
+Time taken: 0.273 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.055 seconds
+OK
+Time taken: 0.111 seconds
+Query ID = root_20170426104243_ec3d607b-b74d-4a4e-9594-08e56dfce0ab
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 1a46a632-f02e-40b2-92d1-0ab49815768b
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[19] stages: [19]
+
+Status: Running (Hive on Spark job[19])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:44,818	Stage-19_0: 0(+2)/2	
+2017-04-26 10:42:45,820	Stage-19_0: 2/2 Finished	
+Status: Finished successfully in 2.01 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/web_returns
+OK
+Time taken: 2.944 seconds
+OK
+Time taken: 0.205 seconds
+OK
+Time taken: 0.006 seconds
+OK
+Time taken: 0.069 seconds
+OK
+Time taken: 0.105 seconds
+Query ID = root_20170426104246_e1251208-994e-451e-b82c-ede64f6365b9
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 606e379d-a8d8-4e8c-9747-06b4f4b541ce
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[20] stages: [20]
+
+Status: Running (Hive on Spark job[20])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:48,153	Stage-20_0: 1(+1)/2	
+2017-04-26 10:42:49,156	Stage-20_0: 2/2 Finished	
+Status: Finished successfully in 2.01 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/item_marketprices
+OK
+Time taken: 2.587 seconds
+OK
+Time taken: 0.199 seconds
+OK
+Time taken: 0.005 seconds
+OK
+Time taken: 0.313 seconds
+OK
+Time taken: 0.109 seconds
+Query ID = root_20170426104250_5de706d3-ad4f-4ebb-b8ed-767acac5027d
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = d958d77a-f124-4b95-95f6-92ef7f4f4501
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[21] stages: [21]
+
+Status: Running (Hive on Spark job[21])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:42:51,374	Stage-21_0: 0(+2)/2	
+2017-04-26 10:42:53,380	Stage-21_0: 1(+1)/2	
+2017-04-26 10:42:56,394	Stage-21_0: 1(+1)/2	
+2017-04-26 10:42:59,407	Stage-21_0: 2/2 Finished	
+Status: Finished successfully in 9.04 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/web_clickstreams
+OK
+Time taken: 9.562 seconds
+OK
+Time taken: 0.515 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.883 seconds
+OK
+Time taken: 0.111 seconds
+Query ID = root_20170426104301_6adbfa37-0203-4f78-af05-cdf6b76f4caa
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 2b614310-34c3-4c62-933e-da146cba68d4
+Running with YARN Application = application_1493173284393_0004
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0004
+
+Query Hive on Spark job[22] stages: [22]
+
+Status: Running (Hive on Spark job[22])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:43:02,490	Stage-22_0: 0(+2)/2	
+2017-04-26 10:43:03,493	Stage-22_0: 2/2 Finished	
+Status: Finished successfully in 2.01 seconds
+Moving data to directory hdfs://bdpe611n1:9001/user/hive/warehouse/bigbench.db/product_reviews
+OK
+Time taken: 2.602 seconds
+OK
+Time taken: 0.183 seconds
+======= Load data into hive time =========
+Start timestamp: 2017/04/26:10:40:23 1493174423
+Stop  timestamp: 2017/04/26:10:43:11 1493174591
+Duration:  0h 2m 48s
+----- result -----
+Load data SUCCESS exit code: 0
+time&status: /opt/Beaver/BB/logs/times.csv
+full log: /opt/Beaver/BB/logs/populateMetastore-run_query.log
+===========================

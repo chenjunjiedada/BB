@@ -1,0 +1,126 @@
+Additional local hive settings found. Adding /opt/Beaver/BB/engines/hive/queries/q02/engineLocalSettings.sql to hive init.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/Beaver/hive-2.2.0-bloom-filter/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/Beaver/hadoop-2.7.3/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in file:/opt/Beaver/hive-2.2.0-bloom-filter/config/2017-04-26-10-19-31/hive-log4j2.properties Async: true
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats=true
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=false
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=false
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=false
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+Added [/opt/Beaver/BB/engines/hive/queries/Resources/bigbenchqueriesmr.jar] to class path
+Added resources: [/opt/Beaver/BB/engines/hive/queries/Resources/bigbenchqueriesmr.jar]
+OK
+Time taken: 0.009 seconds
+Added resources: [/opt/Beaver/BB/engines/hive/queries/q02/q2-sessionize.py]
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.327 seconds
+hive.exec.compress.output=false
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.179 seconds
+Query ID = root_20170426104436_98410fd7-8ce7-4e6a-b0d6-e89a09b1ab45
+Total jobs = 1
+Launching Job 1 out of 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Spark Job = 5baef7b6-afce-4dbd-8f94-ed72bc6363e7
+Running with YARN Application = application_1493173284393_0006
+Kill Command = /opt/Beaver/hadoop/bin/yarn application -kill application_1493173284393_0006
+
+Query Hive on Spark job[0] stages: [0, 1, 2, 3, 4]
+
+Status: Running (Hive on Spark job[0])
+Job Progress Format
+CurrentTime StageId_StageAttemptId: SucceededTasksCount(+RunningTasksCount-FailedTasksCount)/TotalTasksCount
+2017-04-26 10:45:01,769	Stage-0_0: 0(+1)/1	Stage-1_0: 0/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:04,815	Stage-0_0: 0(+1)/1	Stage-1_0: 0/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:07,856	Stage-0_0: 0(+1)/1	Stage-1_0: 0/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:10,908	Stage-0_0: 0(+1)/1	Stage-1_0: 0/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:12,940	Stage-0_0: 1/1 Finished	Stage-1_0: 0(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:13,952	Stage-0_0: 1/1 Finished	Stage-1_0: 4(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:14,968	Stage-0_0: 1/1 Finished	Stage-1_0: 8(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:15,982	Stage-0_0: 1/1 Finished	Stage-1_0: 16(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:16,998	Stage-0_0: 1/1 Finished	Stage-1_0: 19(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:18,011	Stage-0_0: 1/1 Finished	Stage-1_0: 20(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:19,027	Stage-0_0: 1/1 Finished	Stage-1_0: 26(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:20,040	Stage-0_0: 1/1 Finished	Stage-1_0: 51(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:21,053	Stage-0_0: 1/1 Finished	Stage-1_0: 55(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:22,071	Stage-0_0: 1/1 Finished	Stage-1_0: 87(+32)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:23,083	Stage-0_0: 1/1 Finished	Stage-1_0: 105(+23)/128	Stage-2_0: 0/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:24,094	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 0(+32)/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:25,104	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 4(+32)/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:26,113	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 12(+32)/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:27,123	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 38(+32)/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:28,133	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 64(+32)/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:29,144	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 92(+32)/128	Stage-3_0: 0/128	Stage-4_0: 0/1	
+2017-04-26 10:45:30,160	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 128/128 Finished	Stage-3_0: 0(+128)/128	Stage-4_0: 0/1	
+2017-04-26 10:45:31,169	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 128/128 Finished	Stage-3_0: 32(+96)/128	Stage-4_0: 0/1	
+2017-04-26 10:45:34,190	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 128/128 Finished	Stage-3_0: 96(+32)/128	Stage-4_0: 0/1	
+2017-04-26 10:45:35,197	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 128/128 Finished	Stage-3_0: 112(+16)/128	Stage-4_0: 0/1	
+2017-04-26 10:45:36,206	Stage-0_0: 1/1 Finished	Stage-1_0: 128/128 Finished	Stage-2_0: 128/128 Finished	Stage-3_0: 128/128 Finished	Stage-4_0: 1/1 Finished	
+Status: Finished successfully in 36.48 seconds
+Loading data to table bigbench.q02_hive_power_test_0_result
+OK
+Time taken: 60.578 seconds
+OK
+Time taken: 0.196 seconds
+======= q02_hive_power_test_0 time =======
+Start timestamp: 2017/04/26:10:44:29 1493174669
+Stop  timestamp: 2017/04/26:10:45:37 1493174737
+Duration:  0h 1m 8s
+q02_hive_power_test_0 SUCCESS exit code: 0 
+----- result -----
+HAS_RESULT  bytes: 464
+to display: hadoop fs -cat /user/root/benchmarks/bigbench/queryResults/q02_hive_power_test_0_result/*
+----- logs -----
+time&status: /opt/Beaver/BB/logs/times.csv
+full log: /opt/Beaver/BB/logs/q02_hive_power_test_0.log
+=========================

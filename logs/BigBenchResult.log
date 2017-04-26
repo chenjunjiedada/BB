@@ -1,0 +1,86 @@
+Apr 26, 2017 10:38:28 AM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      (this might take a while...)
+Apr 26, 2017 10:38:46 AM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      finished. Time:          0h:00m:18s:729ms
+Apr 26, 2017 10:38:46 AM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench clean: Data                                    (this might take a while...)
+Apr 26, 2017 10:38:50 AM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench clean: Data                                    finished. Time:          0h:00m:03s:265ms
+Apr 26, 2017 10:38:50 AM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench preparation: Data generation                   (this might take a while...)
+Apr 26, 2017 10:40:23 AM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench preparation: Data generation                   finished. Time:          0h:01m:33s:793ms
+Apr 26, 2017 10:40:23 AM io.bigdatabenchmark.v1.driver.BigBench run
+INFO: BigBench benchmark: Start
+Apr 26, 2017 10:40:23 AM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench phase 1: Load test                             (this might take a while...)
+Apr 26, 2017 10:43:11 AM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench phase 1: Load test                             finished. Time:          0h:02m:47s:235ms
+Apr 26, 2017 10:43:11 AM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench phase 2: Power test                            Running queries on          1 stream(s)
+Apr 26, 2017 10:43:11 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  1 ( 1/22) log file: /opt/Beaver/BB/logs/q01_hive_power_test_0.log
+Apr 26, 2017 10:44:16 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  1 ( 1/22) finished. Time:          0h:01m:05s:005ms
+Apr 26, 2017 10:44:16 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  2 ( 2/22) log file: /opt/Beaver/BB/logs/q02_hive_power_test_0.log
+Apr 26, 2017 10:45:39 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  2 ( 2/22) finished. Time:          0h:01m:23s:409ms
+Apr 26, 2017 10:45:39 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  3 ( 3/22) log file: /opt/Beaver/BB/logs/q03_hive_power_test_0.log
+Apr 26, 2017 10:46:56 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  3 ( 3/22) finished. Time:          0h:01m:17s:154ms
+Apr 26, 2017 10:46:56 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  6 ( 4/22) log file: /opt/Beaver/BB/logs/q06_hive_power_test_0.log
+Apr 26, 2017 10:48:14 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  6 ( 4/22) finished. Time:          0h:01m:17s:400ms
+Apr 26, 2017 10:48:14 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  7 ( 5/22) log file: /opt/Beaver/BB/logs/q07_hive_power_test_0.log
+Apr 26, 2017 10:49:28 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  7 ( 5/22) finished. Time:          0h:01m:14s:779ms
+Apr 26, 2017 10:49:28 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  8 ( 6/22) log file: /opt/Beaver/BB/logs/q08_hive_power_test_0.log
+Apr 26, 2017 10:51:06 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  8 ( 6/22) finished. Time:          0h:01m:37s:286ms
+Apr 26, 2017 10:51:06 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  9 ( 7/22) log file: /opt/Beaver/BB/logs/q09_hive_power_test_0.log
+Apr 26, 2017 10:52:09 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  9 ( 7/22) finished. Time:          0h:01m:03s:396ms
+Apr 26, 2017 10:52:09 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 10 ( 8/22) log file: /opt/Beaver/BB/logs/q10_hive_power_test_0.log
+Apr 26, 2017 10:55:01 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 10 ( 8/22) finished. Time:          0h:02m:52s:178ms
+Apr 26, 2017 10:55:01 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 11 ( 9/22) log file: /opt/Beaver/BB/logs/q11_hive_power_test_0.log
+Apr 26, 2017 10:56:09 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 11 ( 9/22) finished. Time:          0h:01m:08s:110ms
+Apr 26, 2017 10:56:09 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 12 (10/22) log file: /opt/Beaver/BB/logs/q12_hive_power_test_0.log
+Apr 26, 2017 10:57:23 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 12 (10/22) finished. Time:          0h:01m:13s:566ms
+Apr 26, 2017 10:57:23 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 13 (11/22) log file: /opt/Beaver/BB/logs/q13_hive_power_test_0.log
+Apr 26, 2017 10:58:37 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 13 (11/22) finished. Time:          0h:01m:13s:567ms
+Apr 26, 2017 10:58:37 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 14 (12/22) log file: /opt/Beaver/BB/logs/q14_hive_power_test_0.log
+Apr 26, 2017 10:59:41 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 14 (12/22) finished. Time:          0h:01m:04s:910ms
+Apr 26, 2017 10:59:41 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 15 (13/22) log file: /opt/Beaver/BB/logs/q15_hive_power_test_0.log
+Apr 26, 2017 11:00:46 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 15 (13/22) finished. Time:          0h:01m:04s:819ms
+Apr 26, 2017 11:00:46 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 16 (14/22) log file: /opt/Beaver/BB/logs/q16_hive_power_test_0.log
+Apr 26, 2017 11:01:55 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 16 (14/22) finished. Time:          0h:01m:09s:013ms
+Apr 26, 2017 11:01:55 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 17 (15/22) log file: /opt/Beaver/BB/logs/q17_hive_power_test_0.log
+Apr 26, 2017 11:03:10 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 17 (15/22) finished. Time:          0h:01m:14s:310ms
+Apr 26, 2017 11:03:10 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 19 (16/22) log file: /opt/Beaver/BB/logs/q19_hive_power_test_0.log
+Apr 26, 2017 11:04:30 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 19 (16/22) finished. Time:          0h:01m:20s:513ms
+Apr 26, 2017 11:04:30 AM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 21 (17/22) log file: /opt/Beaver/BB/logs/q21_hive_power_test_0.log

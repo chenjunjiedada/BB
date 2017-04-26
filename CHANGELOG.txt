@@ -1,0 +1,89 @@
+BigBench v0.6 beta changes:
+* Updated Requirements
+  * spark 1.5
+  * deprecated mahout as ml engine for q05,q20,q25,q26,q28 => successor is spark
+
+* Minor bugfixes in kit and Java driver
+  * Fixed github issue #52 in driver
+  * Removed error check on hdfs delete operations as they might fail if no files are present
+  * Added missing bigBench options in validation phases to the driver
+  * Fixed q27 validation for scale factor != 1
+  * Fixed github issue #49 in driver
+  * Merge pull request #46
+  * validate-functions in all run.sh files return exit code 1 on error now
+* Code cleanup in bash kit parts
+  * Moved unused population/refresh hive scripts to deprecated subfolder
+  * Added empty engineLocalSettings.(sql,conf) files in all query directories
+  * Renamed previous hiveLocalSettings.sql to engineLocalSettings.sql
+  * Adapted kit to only read engineLocalSettings.(sql,conf) files when they are not empty
+  * Renamed hiveSettings.sql to engineSettings.sql for consistency reasons
+  * Changed the default database name from bigbenchORC to bigbench
+  * Switched INIT_PARAMS from a variable to an array to be more robust towards parameters which might contain whitespaces
+  * Removed deprecated comments in engineSettings.conf
+  * Some more code cleanup in engineSettings.conf
+  * Renamed the "variants" folders in the query directories to "deprecated"
+* New features and updates in kit and Java driver
+  * Added BigBench version information to bigBench script
+  * Added new script getEnvInfo.sh which collects system information
+  * Added new module logEnvInformation which performs the environment information collection
+  * getEnvInfo.sh is pulled and executed by the participating nodes
+  * The resulting zip files with the system information are placed into logs/
+  * All files within logs/ are moved into a timestamped subfolder at the end of a benchmark run
+  * The used conf/ and engine-subdirectory are added to the log subfolder as well
+  * The log subfolder is zipped
+  * Log subfolders older than a day (but not the corresponding zip files) are automatically deleted after a benchmark run
+  * Modify driver to call logEnvInformation module after the benchmark run but before moving/zipping the logs
+* Queries
+  * Updated validation result sets for all updated queries
+  * minor updates on various queries: description improvement and typos
+  * improved global ordering of results for Q20, Q25 and Q26 in pull request #58  
+  * Integrated Intel query optimizations for 2, 5 and 21
+    * result data did not change, only the order of the columns is different
+  * Switched from opennlp-1.5.3 to opennlp-1.6.0. Affected: q10,q18,q19,q21,q27
+  * implemented machine learning parts of q05,q20,q25,q26,q28 in spark. Deprecated mahout. ML-Engine is configurable in engines/hive/conf/engineSettings.conf BIG_BENCH_ENGINE_HIVE_ML_FRAMEWORK=<mlFramework>
+  * q06 eliminated sub-queries and the need for 4 self joins. Better pre-filtering of data. Updated base logic of query, added "report top n"
+  * q07 fixed missing "i_category" filter in avg price calculation
+  * q13 eliminated sub-queries and the need for 4 self joins. Better pre-filtering of data.
+  * q23 corrected implementation: removed "debug" result table from tpc-ds template, corrected coefficient filter
+  * q24 fixed the "cross price elasticity of demand" calculation
+  * q26 move conditions into "inner join" clause
+  * q27 fixed validation issue 
+  * q28 fixed issue in result validation
+* DataModel
+  * Deterministic output regardless of cluster settings (data was deterministic on row level before, but not necessary written out in the same order)
+    * updated data-generator to zero-pad file sequence numbers: customer_001.dat (before: customer_1.dat)
+    * disabled web_clickstreams row interleaving (now a "clicksession" of a user is written as a continuous block, instead of being interleaved with clicks from other users)
+    
+    
+BigBench v0.5 beta changes:
+
+* Java driver
+  * Added properties file
+  * This allows defining driver settings like the workload and the queries to run
+  * Driver was segmented into independent parts to support a flexible workload execution
+  * Metric was split into sub-metrics to output results even if some phases or queries were skipped
+  * Added logic to check BigBench final result validity depending on which phases were performed
+    A result is flagged valid only if:
+    * All 30 queries were running
+    * At least the phases LOAD_TEST, POWER_TEST and THROUGHPUT_TEST_1 were performed
+    * Pretend mode was not active
+  * Implemented custom RNG and list shuffling algorithm so that the result is consistent over different JVM vendors and versions
+  * Driver adaption to underlying bash enhancements
+    * Added validation phases
+    * Enabled expert mode of bash scripts
+* Bash kit
+  * Added validation method to query scripts for query result validation
+  * Added new module to call validation methods
+  * Introduced normal and expert mode in bash scripts
+    * A user should only use the normal mode for benchmark execution. This mode only allows executing the runBenchmark module to start the Java driver which in turn takes over control of the bash part of the kit
+    * The expert mode allows running all modules. This is the mode the Java driver operates in. A user can choose to enable that mode as well if the Java driver should be circumvented
+  * Extended system environment information logging of the bigBench script
+* Queries
+  * Modified queries for deterministic output across multiple runs and across different hadoop stacks and cluster configuration settings
+  * Synced queries and their description.
+  * included various performance improvement patches
+  * Merged several pull requests
+* DataModel
+  * added high frequency customers (some customers being more active then others)
+  * added high frequency items (some items are more frequently viewed and purchased then others)
+  * corrected an issue in product review text generation
